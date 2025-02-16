@@ -1,7 +1,10 @@
 require("config.lazy")
 
 vim.opt.termguicolors = true
-vim.o.termguicolors = true
+vim.opt.relativenumber = true  
+vim.opt.number = true          
+vim.opt.clipboard = "unnamedplus"   
+-- vim.o.termguicolors = true
 vim.cmd[[highlight NeoTreeNormal guibg=none]]
 vim.cmd[[highlight NeoTreeFileName guibg=none]]
 vim.cmd[[highlight NeoTreeDirectoryName guibg=none]]
@@ -15,7 +18,3 @@ vim.cmd[[highlight NeoTreeDirectoryName guibg=none]]   -- For the folder name ba
 vim.cmd[[highlight NeoTreeFileName guibg=none]]        -- For the file name background (unfocused)
 vim.cmd[[highlight NeoTreeRootName guibg=none]]        -- For the root name background (unfocused)
 vim.cmd[[highlight NeoTreeHiddenFileName guibg=none]]  -- For the hidden files (unfocused)
-vim.opt.relativenumber = true  
-vim.opt.number = true          
-vim.opt.clipboard = "unnamedplus"  
-
