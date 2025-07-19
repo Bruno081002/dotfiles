@@ -7,7 +7,7 @@ source = auto
 
 gradient = 1
 gradient_count = 4
-gradient_color_1 = '#66918A'
-gradient_color_2 = '#011337'
-gradient_color_3 = '#425252'
-gradient_color_4 = '#88714F'
+gradient_color_1 = '#FB5E41'
+gradient_color_2 = '#0F1710'
+gradient_color_3 = '#703623'
+gradient_color_4 = '#7D7F77'

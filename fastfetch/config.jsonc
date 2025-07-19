@@ -1,11 +1,18 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | shuf -n 1)",
-    "height": 18
+    // "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | shuf -n 1)",
+    "type" : "auto",
+    "source": "arch",
+    "height" : 1000,
+    "height": 18,
+    "color" : {
+	    "1":"Red",
+	    "2":"Yellow"
+    }
   },
   "display": {
-    "separator" : " : "
+    "separator" : "   "
   },
   "modules": [
     {
@@ -106,6 +113,10 @@
       "paddingLeft": 2,
       "symbol": "circle"
     },
+    //{
+    // "type" : "custom",
+    // "source":"cowsay 'Time for some fun'"
+    //},
     "break"
   ]
 }
