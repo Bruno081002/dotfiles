@@ -20,7 +20,7 @@ return {
             require("prettier").setup({
                 bin = 'prettier',  -- Usa o Prettier instalado no sistema
                 filetypes = {
-                    "javascript", "typescript", "css", "scss", "json", "markdown",
+                    "javascript", "typescript", "css", "scss", "json", "markdown", "cpp"
                 }
             })
         end,
