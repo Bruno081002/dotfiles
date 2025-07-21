@@ -7,6 +7,7 @@ return {
     config = function()
       require("toggleterm").setup({
         -- Keybinding to toggle terminal
+	dir = "file_dir",
         open_mapping = [[<C-t>]],  -- Press <C-t> to toggle the terminal
         size = 20,                 -- Set default terminal size
         direction = "horizontal",  -- You can set 'horizontal', 'vertical', or 'float'

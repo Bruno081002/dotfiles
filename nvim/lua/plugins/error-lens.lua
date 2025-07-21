@@ -15,7 +15,7 @@ return{
 					total = 30 -- steps of blender
 				},
 				prefix = 4,
-				highlight = true,  -- Ativa destaque de erros
+				highlight = {enabled = true},  -- Ativa destaque de erros
 				signs = true,  -- Mostra ícones nos sinais do LSP
 				virtual_text = true,  -- Mostra os erros inline no código
 				colors = {

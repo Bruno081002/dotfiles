@@ -6,6 +6,7 @@ require("config.lazy")
 vim.opt.relativenumber = true  
 vim.opt.number = true          
 vim.opt.clipboard = "unnamedplus"   
+vim.cmd('syntax on')
 -- vim.o.termguicolors = true
 vim.cmd[[highlight NeoTreeNormal guibg=none]]
 vim.cmd[[highlight NeoTreeFileName guibg=none]]
@@ -26,5 +27,7 @@ vim.api.nvim_set_keymap("n", "<leader>db", ":Dashboard<CR>", { noremap = true, s
 
 vim.api.nvim_set_keymap("i", "<C-j>", 'copilot#Accept("<CR>")', { expr = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<leader>t', ':terminal<CR>', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true }) 
 
