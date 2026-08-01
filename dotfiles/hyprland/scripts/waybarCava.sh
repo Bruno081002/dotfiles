@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 bar="▁▂▃▄▅▆▇█"
@@ -5,6 +6,7 @@ dict="s/;//g"
 
 bar_length=${#bar}
 
+# Gerando as substituições do sed
 for ((i = 0; i < bar_length; i++)); do
     dict+=";s/$i/${bar:$i:1}/g"
 done
@@ -28,6 +30,10 @@ EOF
 pkill -f "cava -p $config_file"
 
 # Iniciar múltiplas instâncias do Cava (uma por monitor)
+
 for monitor in $(hyprctl monitors | grep "Monitor" | awk '{print $2}'); do
+    export MONITOR=$monitor
     cava -p "$config_file" | sed -u "$dict" &
 done
+
+

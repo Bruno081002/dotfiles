@@ -21,7 +21,6 @@ return{
 
 		 })
 		 vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true, silent = true })
-		 vim.keymap.set("n", "<leader>f", ":Neotree focus<CR>", { noremap = true, silent = true })
 	 end,
 
 }
