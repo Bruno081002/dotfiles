@@ -1,6 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-seri, "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace, "Noto Color Emoji", "noto-fonts-emoji-flags";
+/* font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji"; */
     font-size: 13px;
     padding: 2px 0 0 0;
 }
@@ -75,6 +76,10 @@ button:hover {
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+}
+#workspaces button.active {
+    border-radius: 10px;  /* só arredonda embaixo */
+    box-shadow: inset 0 -3px #ffffff;
 }
 
 #mode {
@@ -540,4 +545,134 @@ label:focus {
 	color:#fff;
 	border-radius: 10px;
 	border-bottom: 1px solid white;
+}
+
+
+#custom-cava {
+	background-color: rgba(0,0,0,0.5);
+	color:#666;
+
+	border-radius: 10px;
+}
+
+#custom-cava:hover {
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+
+	border-radius: 10px;
+	border-bottom: 1px solid white;
+}
+
+#custom-notification {
+	padding: 2px;
+	background-color: rgba(0,0,0,0.5);
+	color:#666;
+
+	border-radius: 10px;
+}
+
+#custom-notification:hover {
+	padding: 2px;
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+
+	border-radius: 10px;
+	border-bottom: 1px solid white;
+}
+
+
+.group-stats {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 6px;
+    padding: 0 6px;
+}
+
+.group-stats .stats {
+    padding: 0 8px;
+}
+
+
+
+#custom-stats_icon {
+    padding: 0 10px;
+}
+
+.group-stats {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 8px;
+}
+
+.group-stats > box > widget {
+    padding: 0 6px;
+}
+
+
+#mpris {
+	padding: 2px;
+	background-color: rgba(0,0,0,0.5);
+	color:#666;
+	border-radius: 10px;
+}
+
+
+
+#mpris:hover{
+	padding: 2px;
+	background-color: rgba(0,0,0,0.5);
+	color:#fff;
+	border-radius: 10px;
+	border-bottom: 1px solid white;
+}
+
+#pulseaudio-slider {
+	margin : 0 10px 10px 10px;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 1;
+    /* background-image: none; */
+    background: white;
+    /* border: none; */
+    border-radius: 50%;
+    /* box-shadow: none; */
+}
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 80px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+}
+#pulseaudio-slider highlight {
+    /* min-width: 10px; */
+    border-radius: 5px;
+    background: green;
+}
+
+#backlight-slider {
+	margin : 0 10px 10px 10px;
+	background: none;
+}
+
+#backlight-slider slider {
+    min-height: 10px;
+    min-width: 10px;
+    opacity: 1;
+    /* background-image: none; */
+    background: white;
+    /* border: none; */
+    border-radius: 50%;
+    /* box-shadow: none; */
+    /* background: none; */
+}
+#backlight-slider trough {
+    min-height: 8px;
+    min-width: 80px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+}
+#backlight-slider highlight {
+    /* min-width: 10px; */
+    border-radius: 5px;
+    background: red;
 }
